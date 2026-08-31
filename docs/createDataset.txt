@@ -16,3 +16,7 @@ pd.DataFrame is used to create a database
 df.to_csv("exampleDataset.csv" , index=False)
 [@] .to_csv is a pandas function that save data frame directiy to csv , 
 [@] index=False prevents pandas froma dding extra unnecessary column or row
+
+
+df=pd.read_csv("name")
+[@] read_csv() to real csv in dataframe format

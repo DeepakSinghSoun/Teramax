@@ -1,0 +1,5 @@
+
+x=df.drop(columns=["name1","name2"])
+y=df["suspecius]
+
+[@] drops the given columns and besides given columns , add all columns to x axis
