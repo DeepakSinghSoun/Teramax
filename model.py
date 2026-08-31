@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
-from sklearn.metrics import accuracy_score 
+from sklearn.metrics import accuracy_score , classification_report
 df = pd.read_csv("exampleDataset.csv")
 
 x=df.drop(columns=["ipaddr","name","suspecious"])
@@ -25,3 +25,4 @@ model.fit(X_train , y_train)
 y_predict=model.predict(X_test)
 
 print(f"MODEL ACCURACY : {accuracy_score(y_test , y_predict)*100:.2f}% \n")
+print(classification_report(y_test, y_predict))
