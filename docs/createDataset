@@ -1,0 +1,18 @@
+### This is for education of the code
+
+to iterate a expression in same list or array :
+list=[f"192.{np.random.randint(2,10)}" for _ in range(10)]
+[@] this _ means repeat same line 
+
+
+np.random.choice([one,two,three],size=10)
+[@] choose random b/w these options
+[@] for 10 times
+
+
+pd.DataFrame is used to create a database 
+
+
+df.to_csv("exampleDataset.csv" , index=False)
+[@] .to_csv is a pandas function that save data frame directiy to csv , 
+[@] index=False prevents pandas froma dding extra unnecessary column or row
