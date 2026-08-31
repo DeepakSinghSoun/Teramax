@@ -3,3 +3,15 @@ x=df.drop(columns=["name1","name2"])
 y=df["suspecius]
 
 [@] drops the given columns and besides given columns , add all columns to x axis
+
+
+
+
+X_train , X_test , y_train , y_test = train_test_split(x,y,test_size=0.2 , random_state=42)
+[@] splits data into traning and testing series where test size 20% means 20% of data will be used as testing whereas 80% of data will be used to train the model , and 20% of data will be hidden from model
+[@] random_state means not to choose the training set COMPLETLY RANDOMLY , but use random_state=42 method to choose random states so that when the code is exxecuted for first time it selects the same random pattern which it will going to select the second time 
+
+
+model=RandomForestClassifier(random_state=42 , class_weight="balanced")
+[@]class_weight=balanced means in short , telling model to pay attention equally so that it doesnt become lazy and says " every thing is alrioght"
+<i dont get this one>
