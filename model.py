@@ -26,3 +26,16 @@ y_predict=model.predict(X_test)
 
 print(f"MODEL ACCURACY : {accuracy_score(y_test , y_predict)*100:.2f}% \n")
 print(classification_report(y_test, y_predict))
+
+
+
+test=[[False,False,False]]
+prediction=model.predict(test)
+
+print(prediction)
+
+"""Model successfully created for 3 parameters which gives wether Y is suspecious or not
+
+now i have to create a classes <very risky> <risky> <normal> to make model more reliable and successful
+
+"""
