@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
 from sklearn.metrics import accuracy_score , classification_report
+
+
 df = pd.read_csv("exampleDataset.csv")
 
 x=df.drop(columns=["ipaddr","name","suspecious"])
@@ -29,10 +31,11 @@ print(classification_report(y_test, y_predict))
 
 
 
-test=[[False,False,False]]
+test=[[True,False,True]]
 prediction=model.predict(test)
 
 print(prediction)
+
 
 """Model successfully created for 3 parameters which gives wether Y is suspecious or not
 
