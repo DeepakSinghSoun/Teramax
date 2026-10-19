@@ -1,0 +1,5 @@
+node_modules/
+backend/data/*.db*
+backend/data/*.joblib
+__pycache__/
+*.pyc

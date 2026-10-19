@@ -22,7 +22,7 @@ def runMaster():
         while True:
             conn, addr=server_socket.accept()
             with conn:
-                print(f"Connected by slave {addr}")
+                print(f"Connected by Client {addr}")
                 data=conn.recv(1024)
                 if not data:
                     break
