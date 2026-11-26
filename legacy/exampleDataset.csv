@@ -1,0 +1,11 @@
+ipaddr,name,usbConnected,stealthScan,susCommands,suspecious
+192.169.1.104,workstation3,False,False,True,True
+192.169.1.181,workstation7,False,False,True,True
+192.169.1.94,workstation8,False,False,False,False
+192.169.1.16,workstation5,False,True,False,True
+192.169.1.108,workstation4,False,False,False,False
+192.169.1.73,workstation8,False,True,True,True
+192.169.1.190,workstation8,False,True,False,True
+192.169.1.22,workstation3,False,True,False,True
+192.169.1.104,workstation6,True,True,True,True
+192.169.1.123,workstation5,True,True,False,True
