@@ -97,3 +97,19 @@ legacy/ + docs/           your original files (untouched) and notes
 ```
 Your old pieces live on: `master.py`/`agents.py` socket protocol → HTTP `/api/agent/report`; `createDataset.py` → `generate_dataset()`;
 `model.py` → `backend/app/model.py`; `main.py` ARP scan idea → `get_mac()` (the module-level port scan in the old `main.py` ran on import, so it was left out).
+
+
+
+frontend start :
+npm run dev
+
+
+backend start:
+<!-- 1 - python -m venv .venv
+2 - .\.venv\Scripts\Activate.ps1
+3 - $env:TERAMAX_SIM = "1"
+    $env:TERAMAX_ADMIN_PASSWORD = "admin12345" -->
+    uvicorn app.main:app --reload
+4 - python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
+
+deactivate
